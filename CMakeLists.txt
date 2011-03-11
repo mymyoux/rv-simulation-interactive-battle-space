@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 #Déclaration du projet
-project(RV-simulation-bataille)
+project(modele-project-cmake)
 set(PROJECT_VERSION_MAJOR 1)
 set(PROJECT_VERSION_MINOR 0)
 set(PROJECT_VERSION_PATCH 0)
@@ -116,43 +116,43 @@ file(
 
 #Déclaration de l'exécutable
 add_executable(
-	rv-simulation-bataille
+	modele-project-cmake
 	${source_files}
 )
 
 #Configuration de l'édition de liens
 if(WIN32)
-target_link_libraries(
-	rv-simulation-bataille
-	${OIS_LIBRARIES}
-	${OGRE_LIBRARIES}
-	${Boost_THREAD_LIBRARY}
-	${Boost_DATE_TIME_LIBRARY}
-	${CEGUI_LIBRARIES}
-	${CEGUI_OgreRenderer_LIBRARIES}
-	${BULLET_LIBRARIES}
-	${BULLET_ConvexDecomposition_LIBRARIES}
-	${OGREBULLET_LIBRARIES}
-	${OPENAL_LIBRARY}
-	${OGG_LIBRARIES}
-	${VORBIS_LIBRARIES}
-	${OGREAL_LIBRARIES}
-)
+	target_link_libraries(
+		modele-project-cmake
+		${OIS_LIBRARIES}
+		${OGRE_LIBRARIES}
+		${Boost_THREAD_LIBRARY}
+		${Boost_DATE_TIME_LIBRARY}
+		${CEGUI_LIBRARIES}
+		${CEGUI_OgreRenderer_LIBRARIES}
+		${BULLET_LIBRARIES}
+		${BULLET_ConvexDecomposition_LIBRARIES}
+		${OGREBULLET_LIBRARIES}
+		${OPENAL_LIBRARY}
+		${OGG_LIBRARIES}
+		${VORBIS_LIBRARIES}
+		${OGREAL_LIBRARIES}
+	)
 ELSE()
-target_link_libraries(
-	rv-simulation-bataille
-	${OIS_LIBRARIES}
-	${OGRE_LIBRARIES}
-	${CEGUI_LIBRARIES}
-	${CEGUI_OgreRenderer_LIBRARIES}
-	${BULLET_LIBRARIES}
-	${BULLET_ConvexDecomposition_LIBRARIES}
-	${OGREBULLET_LIBRARIES}
-	${OPENAL_LIBRARY}
-	${OGG_LIBRARIES}
-	${VORBIS_LIBRARIES}
-	${OGREAL_LIBRARIES}
-)
+	target_link_libraries(
+		modele-project-cmake
+		${OIS_LIBRARIES}
+		${OGRE_LIBRARIES}
+		${CEGUI_LIBRARIES}
+		${CEGUI_OgreRenderer_LIBRARIES}
+		${BULLET_LIBRARIES}
+		${BULLET_ConvexDecomposition_LIBRARIES}
+		${OGREBULLET_LIBRARIES}
+		${OPENAL_LIBRARY}
+		${OGG_LIBRARIES}
+		${VORBIS_LIBRARIES}
+		${OGREAL_LIBRARIES}
+	)
 ENDIF()
 
 #Générateur de documentation

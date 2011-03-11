@@ -1,6 +1,6 @@
 /*!
  **  \file  config.h
- **  \brief Ce fichier contient la déclaration des constantes de configuration du projet
+ **  \brief This file contains the declaration of the constants for the configuration of the projects
  **/
 #ifndef _CONFIG_H_
 #define _CONFIG_H_

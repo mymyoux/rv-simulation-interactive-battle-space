@@ -10,5 +10,7 @@ reg add "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environ
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment" /v OGG_HOME /t REG_SZ /d "%dir%\ogg"
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment" /v VORBIS_HOME /t REG_SZ /d "%dir%\vorbis"
 reg add "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment" /v OGREAL_HOME /t REG_SZ /d "%dir%\ogreal"
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Environment" /v OPENAL_SDK /t REG_SZ /d "%dir%\openal"
+
  
  

@@ -1,7 +1,0 @@
-import * from "PPL.material"
-
-material razor : PPL
-{
-	set_texture_alias Texture texship.jpg
-
-}
